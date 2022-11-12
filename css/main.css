@@ -54,6 +54,7 @@
   --main-color: #212121;
   --white-color: #ffffff;
   --icon-color: #afb1b8;
+  --btn-accent: #188ce8;
   --main-font: "Roboto";
   --transition-duration: 250ms;
   --animation: cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,6 +208,10 @@ button {
   color: var(--white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--btn-accent);
 }
 
 .soc-list {
@@ -971,6 +976,9 @@ button {
 }
 .modal-input:focus-within {
   outline: 1px solid var(--accent-color);
+}
+.modal-input:hover + .modal-input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-input-icon {

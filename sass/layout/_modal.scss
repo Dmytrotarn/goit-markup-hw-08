@@ -87,6 +87,11 @@
   &:focus-within {
     outline: 1px solid var(--accent-color);
   }
+  &:hover {
+    + .modal-input-icon {
+      fill: var(--accent-color);
+    }
+  }
 }
 
 .modal-input-icon {
